@@ -86,8 +86,7 @@
         v-if="isLogin"
         @click="logout"
         block
-        style="color: red"
-      >
+        style="color: red" >
         退出
       </button>
     </footer>

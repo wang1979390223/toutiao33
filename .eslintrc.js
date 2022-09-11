@@ -12,6 +12,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'vue/multi-word-component-names': 'off',
     'space-before-function-paren': 'off',
-    'node/handle-callback-err': 'off'
+    'node/handle-callback-err': 'off',
+    'vue/no-unused-components': 'off'
   }
 }
