@@ -20,7 +20,7 @@
     <van-cell v-else :title="article.title">
       <template #label>
         <van-image
-          v-for="(item,index) in article.cover.images"
+          v-for="(item, index) in article.cover.images"
           :key="index"
           width="100%"
           height="100%"
@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import dayjs from '@/utils/day.js'
 export default {
   props: {
     article: {
@@ -44,7 +45,7 @@ export default {
     label() {
       /*eslint-disable*/
       const { aut_name, comm_count, pubdate } = this.article
-      return `${aut_name} ${comm_count} ${pubdate} `
+      return `${aut_name} ${comm_count} 评论${dayjs(pubdate).fromNow()} `
     }
   }
 }
