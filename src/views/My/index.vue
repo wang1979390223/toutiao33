@@ -58,7 +58,7 @@
         </van-row>
       </div>
       <!-- 未登陆的状态 -->
-      <div class="logout banner" v-else @click="$route.push('/login')">
+      <div class="logout banner" v-else @click="$router.push('/login')">
         <van-image width="1.76rem" height="1.76rem" :src="mobileImg">
         </van-image>
         <span class="text">登录 / 注册</span>
@@ -113,7 +113,7 @@ export default {
   methods: {
     async logout() {
       await this.$dialog.confirm({ title: '黑马头条', message: '是否退出账号' })
-      this.$$store.commit('SET_TOKEN', {})
+      this.$store.commit('SET_TOKEN', {})
     },
     // 获取用户信息
     async getUserInfo() {

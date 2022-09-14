@@ -103,6 +103,7 @@ export default {
         console.log(data)
         //  设置token存进vuex
         this.SET_TOKEN(data.data)
+        //  console.log(this.SET_TOKEN(data.data))
         //  跳转路由
         this.$router.push('/profile')
         //  成功的提示
