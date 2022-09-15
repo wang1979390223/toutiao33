@@ -1,11 +1,11 @@
 <template>
   <div>
-    <router-view> </router-view>
+    <transition name="van-slide-left" mode="out-in">
+      <router-view> </router-view>
+    </transition>
   </div>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style scoped></style>

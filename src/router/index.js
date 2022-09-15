@@ -8,6 +8,10 @@ Vue.use(VueRouter)
 /*  */
 const routes = [
   {
+    path: '/search',
+    component: () => import('@/views/Search')
+  },
+  {
     path: '/login',
     //  component: Login，下面路由懒加载
     component: () => import('@/views/Login')
